@@ -21,10 +21,10 @@ body h1 {
   font-size: 3rem;
 }
 body h1 span, body h1 i {
-  color: #ffa502;
+  color: #71B3CA;
 }
 body h3 {
-  color: #ffa502;
+  color: #71B3CA;
   font-size: 1.5rem;
 }
 body .container .choices {
@@ -34,7 +34,7 @@ body .container .choices {
 }
 body .container .choices button {
   flex: 1 0 45%;
-  width: 400px;
+  width: 420px;
   height: 80px;
   border-radius: 5px;
   cursor: pointer;
@@ -46,8 +46,9 @@ body .container .choices button {
   font-weight: 600;
 }
 body .container .choices button:hover {
-  background: #ffa502;
-  transition: 0.5s;
+  background: #71B3CA;
+  color:white;
+  transition: 0.2s;
 }
 body .container .choices button:active {
   transform: scale(0.9);
@@ -59,8 +60,9 @@ body .container .choices button p {
 }
 body #progress {
   font-size: 1.3rem;
-  color: #ffa502;
+  color: #71B3CA;
 }
+
 
 
 .correct{
@@ -74,3 +76,9 @@ body #progress {
 /* .hide{
   display: none;
 } */
+
+@media (max-width: 500px){
+  body .container .choices button {
+    width: 280px;
+  }
+}
