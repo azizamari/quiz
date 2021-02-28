@@ -4,23 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="s.css">
   <script defer src="app.js"></script>
   <title>Quizz</title>
 </head>
 <body>
+
   <div class="container">
-    <div id="question" class="hide">Question</div>
-    <div id="answer-buttons" class="btn-grid hide">
-      <button class="btn">Answer 1</button>
-      <button class="btn">Answer 2</button>
-      <button class="btn">Answer 3</button>
-      <button class="btn">Answer 4</button>
-    </div>
-    <div class="controls">
-      <button id="start-btn" class="start-btn cbtn">Start</button>
-      <button id="next-btn"  class="next-btn cbtn hide">Next</button>
+    <div id="quiz">
+      <h1><span>Q</span>uiz</h1>
+
+      <h2 id="question">sadddddd</h2>
+        
+      <h3 id="score"></h3>
+
+      <div class="choices">
+        
+        <button id="guess1" class="btn">
+          <p id="choice1" class="answer-text" data-number="1">dddddddddddd</p>
+        </button>
+        
+        <button id="guess2" class="btn">
+          <p id="choice2" class="answer-text" data-number="2">sssssssssss</p>
+        </button>
+        
+        <button id="guess3" class="btn">
+          <p id="choice3" class="answer-text" data-number="3">aaaaaaaa</p>
+        </button>
+        <button id="guess4" class="btn">        
+          <p id="choice4" class="answer-text" data-number="4">ddddddddddd</p>
+        </button>
+      </div>
+
+      <p id="progressText">asdd</p>
+
     </div>
   </div>
 </body>
+<!-- <body>
+    <div class="container">
+      <div class="header">
+        <div id="score" class="hide">0</div>
+        <div id="progressText" class="hide">Question 0/0</div>
+        <div id="question" class="hide">Question</div>
+      </div>
+      <div id="answer-buttons" class="btn-grid hide">
+        <button class="btn answer-text" data-number="1">Answer 1</button>
+        <button class="btn answer-text" data-number="2">Answer 2</button>
+        <button class="btn answer-text" data-number="3">Answer 3</button>
+        <button class="btn answer-text" data-number="4">Answer 4</button>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn cbtn">Start</button>
+      </div>
+    </div>
+</body> -->
 </html>

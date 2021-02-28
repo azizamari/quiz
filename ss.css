@@ -1,0 +1,93 @@
+/* 
+ rgb(0,198,202)
+ rgb(0,73,123)
+ rgb(225,253,249)
+ */
+*{
+  box-sizing: border-box;
+  font-family:helvetica;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #cef7f1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='59' height='29.5' viewBox='0 0 59 29.5'%3E%3Cdefs%3E%3Crect stroke='%23cef7f1' stroke-width='0.21' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23cef7f1' stroke-width='0.21'%3E%3Crect fill='%23caf2ec' width='1' height='1'/%3E%3Crect fill='%23cef7f1' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23c6ede7' width='1' height='1' y='1'/%3E%3Crect fill='%23c2e8e3' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23bee3de'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23b9ded9'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23cef7f1'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23b5d9d4'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23cef7f1'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23cef7f1'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='59' height='29.5'/%3E%3Crect fill='url(%23b)' width='59' height='29.5'/%3E%3Crect fill='url(%23c)' width='59' height='29.5'/%3E%3Crect fill='url(%23d)' width='59' height='29.5'/%3E%3Crect fill='url(%23e)' width='59' height='29.5'/%3E%3Crect fill='url(%23f)' width='59' height='29.5'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 95%;
+  /* background-color: #fff; */
+  height:70%;
+}
+
+#question{
+  text-align: center;
+  font-weight: bold;
+  font-size:2rem
+}
+
+.btn-grid{
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width:100%;
+}
+
+.btn{
+  background-color:white;
+  font-size: 1.1rem;
+  color:black;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  border-radius: 16px;
+  height:7vh;
+  width:30vw;
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.6);
+}
+.btn:hover{
+  background-color: rgb(0,198,202);
+  color:white;
+  transform: initial;
+  box-shadow: initial;
+}
+.correct{
+  background-color: greenyellow !important;
+}
+
+.incorrect{
+  background-color: red !important;
+  color:white;
+}
+.cbtn{
+  background-color:rgb(0,198,202);
+  color:white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  border-radius: 13px;
+  height:6vh;
+  width:15vw;
+}
+
+.hide{
+  display: none;
+}
+.header{
+  width:60%;
+}
