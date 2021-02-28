@@ -50,12 +50,13 @@ body .container .choices button:hover {
   color:white;
   transition: 0.2s;
 }
-body .container .choices button:active {
+/* body .container .choices button:active {
   transform: scale(0.9);
   transition: transform 0.1s;
-}
+} */
 body .container .choices button p {
   font-size: 1.3rem;
+  height: 25px;
   margin: 0;
 }
 body #progress {
