@@ -3,8 +3,8 @@ const answers=Array.from(document.querySelectorAll(".answer-text"));
 const scoreText = document.querySelector("#score");
 const progressText=document.querySelector("#progressText");
 
-// const hiddenItems=Array.from(document.querySelectorAll(".hide"));
-// const startBtn=document.querySelector("#start-btn");
+const hiddenItems=Array.from(document.querySelectorAll(".hide"));
+const startBtn=document.querySelector("#start-btn");
 
 let questions=[
   {
@@ -106,15 +106,15 @@ answers.forEach(choice =>{
 
 function incrementScore(){
   score++;
-  scoreText.innerText=score;
+  scoreText.innerText="Score: "+score;
 }
-// startBtn.addEventListener('click', e=>{
-//   hiddenItems.forEach(item=>{
-//     item.classList.remove("hide");
-//   });
-//   startBtn.classList.add("hide");
-//   startGame();
-//   setTimeout(()=>{
-//   },500)
-// });
+startBtn.addEventListener('click', e=>{
+  hiddenItems.forEach(item=>{
+    item.classList.remove("hide");
+  });
+  startBtn.classList.add("hide");
+  startGame();
+  setTimeout(()=>{
+  },500)
+});
 startGame();

@@ -63,7 +63,22 @@ body #progress {
   font-size: 1.3rem;
   color: #71B3CA;
 }
-
+#start-btn{
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #71B3CA;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color:white;
+}
+#start-btn:hover{
+  background-color: #dfe4ea;
+  color: black;
+}
 
 
 .correct{
@@ -74,9 +89,9 @@ body #progress {
   background-color: red !important;
   color:white;
 }
-/* .hide{
+.hide{
   display: none;
-} */
+}
 
 @media (max-width: 500px){
   body .container .choices button {
